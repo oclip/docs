@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Welcome to MkDocs - Oclip Docs</title>
+<title>Oclip 使用文档 - Oclip Docs</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.0.4, mkdocs-gitbook-1.0.7">
@@ -28,7 +28,7 @@
 </li>
 <li class="divider"></li>
 <li class="chapter active" data-path="">
-<a href=".">Welcome to MkDocs</a>
+<a href=".">Oclip 使用文档</a>
 <li class="divider"></li>
 
 
@@ -65,21 +65,32 @@ Theme by GitBook
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h1 id="oclip">Oclip 使用文档</h1>
+<p>文档主页: https://oclip.github.io/docs/</p>
+<h2 id="_1">安装</h2>
+<h3 id="linux">Linux</h3>
+<p>执行下面的安装命令, <code>oclip</code> 将会安装在 <code>~/.local/bin/oclip</code></p>
+<pre><code>curl -s https://oclip.hanxi.info/install | bash -- /dev/stdin token passwd
 </code></pre>
+
+<h3 id="windows">Windows</h3>
+<p>在<a href="https://github.com/hanxi/oclip-client/releases">这里下载</a> <code>oclip.exe</code>, 拷贝到某个目录 ( 比如: <code>D:\oclip\oclip.exe</code> ) 运行即可.</p>
+<ul>
+<li>系统图标菜单栏设置 <code>Auto Startup</code> 设置为开机启动.</li>
+<li>点击 <code>Open Config</code> 打开配置文件.</li>
+</ul>
+<h2 id="_2">配置</h2>
+<p>配置文件路径为 <code>~/.oclip</code> (windows 下为 <code>C:\用户\用户名\.oclip</code>) , 如下示例:</p>
+<pre><code>token=eyJhbGciOis
+passwd=4dxxxx
+domain=oclip.hanxi.info
+</code></pre>
+
+<ul>
+<li><code>token</code> 从 http://oclip.hanxi.info 申请得到</li>
+<li><code>passwd</code> 自己设置的数据加密密码</li>
+<li><code>domain</code> oclip 服务器地址, 自己搭建服务器时才需要修改</li>
+</ul>
 
 
 </section>
