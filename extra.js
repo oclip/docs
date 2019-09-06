@@ -1,10 +1,10 @@
-$(document).ready(function(){
-    function calcPageHeight (doc) {
-        var	sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-        return sHeight.toString();
-    };
-    calcPageHeight(document);
+function calcPageHeight (doc) {
+    var	sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+    return sHeight.toString();
+};
+calcPageHeight(document);
 
+window.onload = function () {
     if (top && top.location !== self.location) {
         if ((navigator.appName === 'Microsoft Internet Explorer' 
             && navigator.appVersion .split(';')[1].replace(/[ ]/g, '') === 'MSIE7.0') 
@@ -27,5 +27,5 @@ $(document).ready(function(){
             }
         }
     }
-})
+}
 
