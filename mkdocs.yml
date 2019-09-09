@@ -1,0 +1,8 @@
+site_name: Oclip Docs
+theme:
+    name: material
+plugins: []
+nav:
+    - Docs: index.md
+
+site_url: https://oclip.hanxi.info
