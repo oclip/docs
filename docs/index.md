@@ -34,3 +34,28 @@ domain=oclip.hanxi.info
 - `token` 从 <http://oclip.hanxi.info> 申请得到
 - `passwd` 自己设置的数据加密密码
 - `domain` oclip 服务器地址, 自己搭建服务器时才需要修改
+
+## Tmux 配置
+
+参考 [hanxi/dotfiles](https://github.com/hanxi/dotfiles)
+
+```
+setw -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "~/.local/bin/oclip -i"
+bind-key ] run-shell "~/.local/bin/oclip -o | tmux load-buffer -" \; paste-buffer ;
+```
+
+## Neovim 配置
+
+参考 [hanxi/dotfiles](https://github.com/hanxi/dotfiles)
+
+```viml
+"neovim clipborad{
+let g:clipboard = {
+            \'copy': { '+': 'oclip -i', '*': 'oclip -i' },
+            \'paste': { '+': 'oclip -o', '*': 'oclip -o' },
+            \'name': 'oclip',
+            \}
+"}
+```

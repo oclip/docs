@@ -4,5 +4,6 @@ theme:
 plugins: []
 nav:
     - Docs: index.md
+    - Protocol: protocol.md
 
 site_url: https://oclip.hanxi.info
