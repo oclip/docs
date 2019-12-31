@@ -11,6 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Auto build
       run: |
-        python -m pip install --upgrade pip
         pip install mkdocs
         sh deploy.sh
