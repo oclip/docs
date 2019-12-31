@@ -35,6 +35,14 @@ domain=oclip.hanxi.info
 - `passwd` 自己设置的数据加密密码
 - `domain` oclip 服务器地址, 自己搭建服务器时才需要修改
 
+如果是使用自己搭建的服务器 https://github.com/oclip/oclip-server-lite ，可能需要这样配置：
+
+```
+domain=ws://192.168.0.2:2601/server
+token=93ee8c86-b883-46f2-ad22-2c270376bd07
+passwd=123456
+```
+
 ## Tmux 配置
 
 参考 [hanxi/dotfiles](https://github.com/hanxi/dotfiles)
