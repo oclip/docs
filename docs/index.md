@@ -64,5 +64,5 @@ let g:clipboard = {
 安装`TTTPOB/vim-fakeclip`，并在`.vimrc`文件中加入
 ```viml
 "Declare the use of oclip
-let g:clipbaord_platform = 'oclip'
+let g:fakeclip_platform = 'oclip'
 ```
