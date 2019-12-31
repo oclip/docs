@@ -11,5 +11,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Auto build
       run: |
+        pip install wheel
         pip install mkdocs
         sh deploy.sh
